@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pending messages</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="pending">
+          <div class="send__inner">
+            <h2 class="send__title">Create pending message</h2>
+            <p class="send__desc">
+              Enter the message and the number of seconds after which the
+              message will be sent
+            </p>
+            <span>Message</span>
+            <textarea
+              class="send__field"
+              placeholder="Enter..."
+              rows="4"
+            ></textarea>
+            <div data-delay-container class="send__time-inner">
+              <button
+                data-unit="seconds"
+                class="send__time-btn send__time-btn--active"
+              >
+                Seconds
+              </button>
+              <button data-unit="minutes" class="send__time-btn">
+                Minutes
+              </button>
+              <button data-unit="hours" class="send__time-btn">Hours</button>
+            </div>
+
+            <input class="send__time" type="number" placeholder="Enter..." />
+            <button class="send__btn" type="submit">Send message</button>
+          </div>
+
+          <!-- Таблица -->
+          <div class="table-wrapper">
+            <div class="table">
+              <div class="table__container">
+                <div class="table__sticky">
+                  <h2 class="table__title">Pending message</h2>
+                  <p class="table__desc">
+                    This box displays the pending messages created earlier
+                  </p>
+                </div>
+                <table>
+                  <thead class="table__header none">
+                    <tr class="table__header-inner">
+                      <th class="table__header-message">Message</th>
+                      <th class="table__header-remain">Remains</th>
+                      <th class="table__header-status">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table__info">
+                    <div class="table__empty">
+                      <p class="table__empty-text">There is no messages yet</p>
+                    </div>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
