@@ -133,8 +133,6 @@ input::placeholder {
 
 /* TABLE */
 .table-wrapper {
-  display: none;
-
   max-height: 490px;
   overflow-y: auto;
   position: relative;
