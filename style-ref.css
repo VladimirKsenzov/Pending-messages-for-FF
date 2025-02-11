@@ -55,7 +55,7 @@ table {
   width: 408px;
   border: 1px solid #dadce7;
   border-radius: 12px;
-  height: 470px;
+  /* height: 470px; */
   overflow: hidden;
 }
 
@@ -88,11 +88,18 @@ table {
 
 .send__field,
 .send__time {
-  width: 356px;
+  width: 100%;
   padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid #a2a4ac;
   margin-bottom: 8px;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-family: 'Circe', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0%;
 }
 
 .send__time {
@@ -109,7 +116,7 @@ table {
 }
 
 .send__btn {
-  padding: 12px 124px;
+  padding: 12px 122px;
   cursor: pointer;
   border: none;
   background-color: #8950e6;
@@ -126,6 +133,8 @@ table {
 
 /* TABLE */
 .table-wrapper {
+  display: none;
+
   max-height: 490px;
   overflow-y: auto;
   position: relative;
