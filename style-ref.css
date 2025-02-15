@@ -141,7 +141,7 @@ input::placeholder {
   background-color: #fff;
   border: 1px solid #dadce7;
   width: 900px;
-  clip-path: inset(0px round 12px);
+  border-radius: 12px;
 }
 
 .table {
